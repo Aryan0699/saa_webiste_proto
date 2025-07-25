@@ -2,11 +2,16 @@
 import Navbar from "@/components/Navbar"
 import TeamCard from "@/components/Team_Card"
 import Image from "next/image"
-import Alumni_Map from "@/components/Map"
+import { motion } from "motion/react"
+
 
 export default function TeamPage() {
     return (
-        <div>
+        <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
+    ><div>
             <div>
                 <Navbar />
             </div>
@@ -46,5 +51,7 @@ export default function TeamPage() {
 
 
         </div>
+        </motion.div>
+        
     )
 }

@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import NightSkyBackground from "@/components/NightBackground";
 import "./globals.css";
-import NightSkyCanvas from "@/components/NightBackground";
+import ParticlesBg from "@/components/ParticlesBg";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NightSkyCanvas/>
+        
+        <ParticlesBg/>
         {children}
       </body>
     </html>

@@ -4,9 +4,9 @@ export default function TeamCard()
 {
     return(
     
-        <div className="group relative  max-w-[300px] w-1/2 bg-transparent bg-gradient-to-b from-[#00041f] to-[#00041f00] rounded-3xl border border-[#131839] flex flex-col items-center px-4 py-8 shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300">
+        <div className="group relative  max-w-[300px] w-1/2 bg-transparent bg-gradient-to-b from-zinc-900 to-white/9 rounded-3xl border border-[#131839] flex flex-col items-center px-4 py-8 shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300">
             <Image
-                src="/grid.svg"
+                src="/cardbackground.svg"
                 alt="grid"
                 width={309}
                 height={216}
